@@ -1,1 +1,1 @@
-# bootdotdev-project-bookbot
+# bootdotdev project bookbot
