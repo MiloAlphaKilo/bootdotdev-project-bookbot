@@ -19,10 +19,11 @@ def letter_counter(book_path):
             else:
                 letter_counter_register[char] =1
 
-    return letter_counter_register
+    sorted_letter_counter_register = dict(sorted(letter_counter_register.items()))
+    return sorted_letter_counter_register
     
 
-def split_book_to_words(book_path):
+def word_counter(book_path):
 
     book_contents = get_book_text(book_path)
     words = book_contents.split()
