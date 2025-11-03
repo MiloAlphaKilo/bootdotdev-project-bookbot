@@ -1,10 +1,12 @@
-from stats import split_book_to_words
+from report import book_report_complete  
 
 
 def main():
     
-    num_words = split_book_to_words("./books/frankenstein.txt")
+    book = "./books/frankenstein.txt" 
+    report = book_report_complete(book)
+    
+    print(f"{report}")
 
-    print(f"Found {num_words} total words")
 
 main()
